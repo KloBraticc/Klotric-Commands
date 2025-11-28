@@ -1,0 +1,528 @@
+(Klotric - COMMANDS
+
+OPEN CONSOLE
+    60% Keyboard: FN + ESC
+    100% Keyboard: `
+    Toggle Edit On Release: F3
+
+IP FOR HOST
+    open 127.0.0.1
+
+CHEATSCRIPTS (PRESS F2 / FN + 2)
+    NOTE: To give a command to another player, put their name surrounded by backslashes after the command
+          Example: cheat god \player ID\
+
+    HELP:
+        cheat help
+
+    Time Of Day:
+        settimeofday (1-24, put in DLL console)
+
+    Give Permissions:
+        cheat op \player ID\
+
+    Take Away Permissions:
+        cheat deop \player ID\
+
+    Start Aircraft:
+        startaircraft (put this in DLL console)
+
+    Change Field Of View:
+        fov (#)
+
+    Pause Zone:
+        cheat pausesafezone
+
+    Spawn Bots:
+        cheat spawnbot (#)
+
+    Set A Player's Health:
+        cheat sethealth (#)
+
+    Set A Player's Shields:
+        cheat setshield (#)
+
+    Cap Max Players:
+        cheat setmaxplayers (#)
+
+    List Of Players:
+        cheat listplayers
+
+    Toggle Infinite Health:
+        cheat god
+
+    Insta Kill:
+        suicide
+
+    Teleport To Where Player Is Looking:
+        cheat teleport
+        cheat tp
+
+    Teleport (specific):
+        cheat bugitgo (x,y,z)
+
+    BugItGo Helper:
+        showdebug
+
+    Custom Resolution:
+        setres HORIZONTALxVERTICAL
+        (FULLSCREEN ONLY, DOESN'T WORK ON WINDOWED)
+
+    Double Pump:
+        Weapon.TryToFireRestrictedByTypeCooldowns 0
+
+LAUNCH / FLING COMMANDS (numbers adjustable)
+    Fling Upwards:
+        cheat launch 0 0 8000
+
+    Fling North:
+        cheat launch 4500 0 4500
+
+    Fling Northeast:
+        cheat launch 4500 4500 4500
+
+    Fling East:
+        cheat launch 0 4500 4500
+
+    Fling Southeast:
+        cheat launch -4500 4500 4500
+
+    Fling South:
+        cheat launch -4500 0 4500
+
+    Fling Southwest:
+        cheat launch -4500 -4500 4500
+
+    Fling West:
+        cheat launch 0 -4500 4500
+
+    Fling Northwest:
+        cheat launch 4500 -4500 4500
+
+    Fling Downwards:
+        cheat launch 0 0 -10000000
+
+    Cancel Glider:
+        cheat launch 0 0 0
+
+GAMEMODES
+
+  Battle Royale:
+    Solos:
+        /Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo
+    Duos:
+        /Game/Athena/Playlists/Playlist_DefaultDuo.Playlist_DefaultDuo
+    Trios:
+        /Game/Athena/Playlists/Trios/Playlist_Trios.Playlist_Trios
+    Squads:
+        /Game/Athena/Playlists/Playlist_DefaultSquad.Playlist_DefaultSquad
+
+  One Shot:
+    Solos:
+        /Game/Athena/Playlists/Low/Playlist_Low_Solo.Playlist_Low_Solo
+    Duos:
+        /Game/Athena/Playlists/Low/Playlist_Low_Duos.Playlist_Low_Duos
+    Squads:
+        /Game/Athena/Playlists/Low/Playlist_Low_Squad.Playlist_Low_Squad
+
+  Chapter 1 Floor Is Lava:
+    Solo:
+        /Game/Athena/Playlists/Fill/Playlist_Fill_Solo.Playlist_Fill_Solo
+    Duos:
+        /Game/Athena/Playlists/Fill/Playlist_Fill_Duos.Playlist_Fill_Duos
+    Squads:
+        /Game/Athena/Playlists/Fill/Playlist_Fill_Squads.Playlist_Fill_Squads
+
+  Chapter 2 Floor Is Lava:
+    Solo:
+        /Melt/Playlists/Playlist_Melt_Solo.Playlist_Melt_Solo
+    Duos:
+        /Melt/Playlists/Playlist_Melt_Duos.Playlist_Melt_Duos
+    Trios:
+        /Melt/Playlists/Playlist_Melt_Trios.Playlist_Melt_Trios
+    Squads:
+        /Melt/Playlists/Playlist_Melt_Squads.Playlist_Melt_Squads
+
+  Slide:
+    Solos:
+        /Game/Athena/Playlists/Slide/Playlist_Slide_Solo.Playlist_Slide_Solo
+    Duos:
+        /Game/Athena/Playlists/Slide/Playlist_Slide_Duos.Playlist_Slide_Duos
+    Squads:
+        /Game/Athena/Playlists/Slide/Playlist_Slide_Squad.Playlist_Slide_Squad
+
+  Blitz!:
+    Solos:
+        /Game/Athena/Playlists/Blitz/Playlist_Blitz_Solo.Playlist_Blitz_Solo
+    Duos:
+        /Game/Athena/Playlists/Blitz/Playlist_Blitz_Duos.Playlist_Blitz_Duos
+    Squads:
+        /Game/Athena/Playlists/Blitz/Playlist_Blitz_Squads.Playlist_Blitz_Squads
+
+  Siphon:
+    Solos:
+        /Game/Athena/Playlists/Vamp/Playlist_Vamp_Solo.Playlist_Vamp_Solo
+    Duos:
+        /Game/Athena/Playlists/Vamp/Playlist_Vamp_Duos.Playlist_Vamp_Duos
+    Squads:
+        /Game/Athena/Playlists/Vamp/Playlist_Vamp_Squad.Playlist_Vamp_Squad
+
+  Infinite Gliders (Soaring):
+    Solos:
+        /Game/Athena/Playlists/Soaring/Playlist_Soaring_Solo.Playlist_Soaring_Solo
+    Duos:
+        /Game/Athena/Playlists/Soaring/Playlist_Soaring_Duos.Playlist_Soaring_Duos
+    Squads:
+        /Game/Athena/Playlists/Soaring/Playlist_Soaring_Squads.Playlist_Soaring_Squads
+
+  Headshots Only:
+    Solos:
+        /Game/Athena/Playlists/Beagles/Playlist_Beagles_Solo.Playlist_Beagles_Solo
+    Duos:
+        /Game/Athena/Playlists/Beagles/Playlist_Beagles_Duo.Playlist_Beagles_Duo
+
+  Unvaulted:
+    Solos:
+        /Game/Athena/Playlists/Unvaulted/Playlist_Unvaulted_Solo.Playlist_Unvaulted_Solo
+    Duos:
+        /Game/Athena/Playlists/Unvaulted/Playlist_Unvaulted_Duos.Playlist_Unvaulted_Duos
+    Trios:
+        /Game/Athena/Playlists/Unvaulted/Playlist_Unvaulted_Trios.Playlist_Unvaulted_Trios
+    Squads:
+        /Game/Athena/Playlists/Unvaulted/Playlist_Unvaulted_Squads.Playlist_Unvaulted_Squads
+
+  Solid Gold:
+    Solos:
+        /Game/Athena/Playlists/SolidGold/Playlist_SolidGold_Solo.Playlist_SolidGold_Solo
+    Duos:
+        /Game/Athena/Playlists/SolidGold/Playlist_SolidGold_Duos.Playlist_SolidGold_Duos
+    Trios:
+        /Game/Athena/Playlists/SolidGold/Playlist_SolidGold_Trios.Playlist_SolidGold_Trios
+    Squads:
+        /Game/Athena/Playlists/SolidGold/Playlist_SolidGold_Squads.Playlist_SolidGold_Squads
+
+  Wild West:
+    Solos:
+        /Game/Athena/Playlists/WW/Playlist_WW_Solo.Playlist_WW_Solo
+    Duos:
+        /Game/Athena/Playlists/WW/Playlist_WW_Duo.Playlist_WW_Duo
+    Squads:
+        /Game/Athena/Playlists/WW/Playlist_WW_Squad.Playlist_WW_Squad
+
+  Score Royale:
+    Solos:
+        /Score/Playlists/Playlist_Score_Solo.Playlist_Score_Solo
+    Duos:
+        /Score/Playlists/Playlist_Score_Duos.Playlist_Score_Duos
+    Squads:
+        /Score/Playlists/Playlist_Score_Squads.Playlist_Score_Squads
+
+  Super Knockback:
+    Solos:
+        /Builder/Playlists/Playlist_ShowdownTournament_Builder_Solo.Playlist_ShowdownTournament_Builder_Solo
+    Duos:
+        /Builder/Playlists/Playlist_ShowdownTournament_Builder_Duos.Playlist_ShowdownTournament_Builder_Duos
+    Trios:
+        /Builder/Playlists/Playlist_ShowdownTournament_Builder_Trios.Playlist_ShowdownTournament_Builder_Trios
+    Squads:
+        /Builder/Playlists/Playlist_ShowdownTournament_Builder_Squads.Playlist_ShowdownTournament_Builder_Squads
+
+  Bodyguard:
+    Duos:
+        /Bodyguard/Playlists/Playlist_Bodyguard_Duos.Playlist_Bodyguard_Duos
+    Trios:
+        /Bodyguard/Playlists/Playlist_Bodyguard_Trios.Playlist_Bodyguard_Trios
+    Squads:
+        /Bodyguard/Playlists/Playlist_Bodyguard_Squads.Playlist_Bodyguard_Squads
+
+  Comeback:
+    Solos:
+        /Rebirth/Playlists/Playlist_Rebirth_Solo.Playlist_Rebirth_Solo
+    Duos:
+        /Rebirth/Playlists/Playlist_Rebirth_Duos.Playlist_Rebirth_Duos
+    Trios:
+        /Rebirth/Playlists/Playlist_Rebirth_Trios.Playlist_Rebirth_Trios
+    Squads:
+        /Rebirth/Playlists/Playlist_Rebirth_Squads.Playlist_Rebirth_Squads
+
+  Dropwave:
+    Solos:
+        /Phosphorus/Playlists/Playlist_Phosphorus_Solo.Playlist_Phosphorus_Solo
+    Duos:
+        /Phosphorus/Playlists/Playlist_Phosphorus_Duos.Playlist_Phosphorus_Duos
+    Squads:
+        /Phosphorus/Playlists/Playlist_Phosphorus_Squads.Playlist_Phosphorus_Squads
+
+  Team Brawl:
+    Solos:
+        /Madman/Playlists/Playlist_Madman_Solo.Playlist_Madman_Solo
+    Trios:
+        /Madman/Playlists/Playlist_Madman_Trios.Playlist_Madman_Trios
+    Squads:
+        /Madman/Playlists/Playlist_Madman_Squads.Playlist_Madman_Squads
+
+  Battle Labs:
+        /Game/Athena/Playlists/BattleLab/Playlist_BattleLab.Playlist_BattleLab
+
+  Creative:
+        /Game/Athena/Playlists/Creative/Playlist_PlaygroundV2.Playlist_PlaygroundV2
+
+  Team Rumble Gamemodes:
+    Team Rumble:
+        /Game/Athena/Playlists/Respawn/Playlist_Respawn_24.Playlist_Respawn_24
+    One Shot Team Rumble:
+        /Game/Athena/Playlists/Respawn/Variants/Respawn_Low/Playlist_Respawn_24_Low.Playlist_Respawn_24_Low
+    Team Rumble: Lava:
+        /Game/Athena/Playlists/Respawn/Playlist_Respawn_20_Lava.Playlist_Respawn_20_Lava
+    Chapter 1 Siphon Team Rumble:
+        /Game/Athena/Playlists/Respawn/Playlist_Respawn_20_Sif.Playlist_Respawn_20_Sif
+    Chapter 2 Siphon Team Rumble:
+        /Game/Athena/Playlists/Respawn/Variants/Respawn_Vamp/Playlist_Respawn_24_Vamp.Playlist_Respawn_24_Vamp
+    Unvaulted Team Rumble:
+        /Game/Athena/Playlists/Respawn/Variants/Respawn_Unvaulted/Playlist_Respawn_24_Unvaulted.Playlist_Respawn_24_Unvaulted
+    Solid Gold Team Rumble:
+        /Game/Athena/Playlists/Respawn/Variants/Respawn_SolidGold/Playlist_Respawn_24_SolidGold.Playlist_Respawn_24_SolidGold
+
+SKINS (all are console commands using cheat applycid)
+
+    Ramirez:
+        cheat applycid CID_001_Athena_Commando_F_Default
+    Banshee:
+        cheat applycid CID_002_Athena_Commando_F_Default
+    Headhunter:
+        cheat applycid CID_003_Athena_Commando_F_Default
+    Wildcat:
+        cheat applycid CID_004_Athena_Commando_F_Default
+    Jonesy:
+        cheat applycid CID_005_Athena_Commando_M_Default
+    Spitfire:
+        cheat applycid CID_006_Athena_Commando_M_Default
+    Hawk:
+        cheat applycid CID_007_Athena_Commando_M_Default
+    Renegade Default:
+        cheat applycid CID_008_Athena_Commando_M_Default
+    Ranger:
+        cheat applycid CID_010_Athena_Commando_M
+    Scout:
+        cheat applycid CID_011_Athena_Commando_M
+    Trooper:
+        cheat applycid CID_012_Athena_Commando_M
+    Renegade:
+        cheat applycid CID_013_Athena_Commando_F
+    Pathfinder:
+        cheat applycid CID_014_Athena_Commando_F
+    Infiltrator:
+        cheat applycid CID_019_Athena_Commando_M
+    Aerial Assault Trooper:
+        cheat applycid CID_017_Athena_Commando_M
+    Recon Scout:
+        cheat applycid CID_018_Athena_Commando_M
+    Recon Expert:
+        cheat applycid CID_022_Athena_Commando_F
+    Munitions Expert:
+        cheat applycid CID_023_Athena_Commando_F
+    Recon Specialist:
+        cheat applycid CID_024_Athena_Commando_F
+    Desparado:
+        cheat applycid CID_026_Athena_Commando_M
+    Survival Specialist:
+        cheat applycid CID_027_Athena_Commando_F
+    Renegade Raider:
+        cheat applycid CID_028_Athena_Commando_F
+    Ghoul Trooper:
+        cheat applycid CID_029_Athena_Commando_F_Halloween
+    Skull Trooper:
+        cheat applycid CID_030_Athena_Commando_M_Halloween
+    Royale Knight:
+        cheat applycid CID_033_Athena_Commando_F_Medieval
+    Black Knight:
+        cheat applycid CID_035_Athena_Commando_M_Medieval
+    Arctic Assassin:
+        cheat applycid CID_037_Athena_Commando_F_WinterCamo
+    Sparkle Specialist:
+        cheat applycid CID_039_Athena_Commando_F_Disco
+    Shadow Ops:
+        cheat applycid CID_043_Athena_Commando_F_Stealth
+    Brite Bomber:
+        cheat applycid CID_044_Athena_Commando_F_SciPop
+    Red Nosed Raider:
+        cheat applycid CID_047_Athena_Commando_F_HolidayReindeer
+    Ginger Gunner:
+        cheat applycid CID_048_Athena_Commando_F_HolidayGingerbread
+    Blue Team Leader:
+        cheat applycid CID_052_Athena_Commando_F_PSBlue
+    Mogul Master:
+        cheat applycid CID_061_Athena_Commando_F_SkiGirl
+    Mogul (USA):
+        cheat applycid CID_062_Athena_Commando_F_SkiGirl_USA
+    Mogul (CAN):
+        cheat applycid CID_063_Athena_Commando_F_SkiGirl_CAN
+    Mogul (GBR):
+        cheat applycid CID_064_Athena_Commando_F_SkiGirl_GBR
+    Mogul (FRA):
+        cheat applycid CID_065_Athena_Commando_F_SkiGirl_FRA
+    Mogul (GER):
+        cheat applycid CID_066_Athena_Commando_F_SkiGirl_GER
+    Mogul (CHN):
+        cheat applycid CID_067_Athena_Commando_F_SkiGirl_CHN
+    Mogul (KOR):
+        cheat applycid CID_068_Athena_Commando_F_SkiGirl_KOR
+    The Reaper:
+        cheat applycid CID_084_Athena_Commando_M_Assassin
+    Crimson Scout:
+        cheat applycid CID_086_Athena_Commando_M_RedSilk
+    Rose Team Leader:
+        cheat applycid CID_096_Athena_Commando_F_Founder
+    Sgt. Green Clover:
+        cheat applycid CID_098_Athena_Commando_F_StPatty
+    Royale Bomber:
+        cheat applycid CID_113_Athena_Commando_M_BlueAce
+    Trailblazer:
+        cheat applycid CID_114_Athena_Commando_F_TacticalWoodland
+    Teknique:
+        cheat applycid CID_120_Athena_Commando_F_Graffiti
+    Nitelite:
+        cheat applycid CID_124_Athena_Commando_F_AuroraGlow
+    Rapscallion:
+        cheat applycid CID_135_Athena_Commando_F_Jailbird
+    Star Spangled Trooper:
+        cheat applycid CID_157_Athena_Commando_M_StarsAndStripes
+    Star Spangled Ranger:
+        cheat applycid CID_158_Athena_Commando_F_StarsAndStripes
+    Sun Strider:
+        cheat applycid CID_166_Athena_Commando_F_Lifeguard
+    Eon:
+        cheat applycid CID_174_Athena_Commando_F_CarbideWhite
+    Galaxy:
+        cheat applycid CID_175_Athena_Commando_M_Celestial
+    Wreck Raider:
+        cheat applycid CID_180_Athena_Commando_M_Scuba
+    Double Helix:
+        cheat applycid CID_183_Athena_Commando_M_ModernMilitaryRed
+    Far Out Man:
+        cheat applycid CID_192_Athena_Commando_M_Hippie
+    Dreamflower:
+        cheat applycid CID_193_Athena_Commando_F_Hippie
+    Chopper:
+        cheat applycid CID_197_Athena_Commando_F_Biker
+    Field Surgeon:
+        cheat applycid CID_216_Athena_Commando_F_Medic
+    Maximilian:
+        cheat applycid CID_223_Athena_Commando_M_Dieselpunk
+    Airheart:
+        cheat applycid CID_224_Athena_Commando_F_Dieselpunk
+    Heidi:
+        cheat applycid CID_226_Athena_Commando_F_Octoberfest
+    Dark Bomber:
+        cheat applycid CID_229_Athena_Commando_F_DarkBomber
+    Fable:
+        cheat applycid CID_231_Athena_Commando_F_RedRiding
+    Scourge:
+        cheat applycid CID_240_Athena_Commando_F_Plague
+    Bullseye:
+        cheat applycid CID_242_Athena_Commando_F_Bullseye
+    Skull Ranger:
+        cheat applycid CID_246_Athena_Commando_F_Grave
+    Red-Nosed Ranger:
+        cheat applycid CID_311_Athena_Commando_M_Reindeer
+    Ikonik:
+        cheat applycid CID_313_Athena_Commando_M_KpopFashion
+    Honor Guard:
+        cheat applycid CID_342_Athena_Commando_M_StreetRacerMetallic
+    Luxe:
+        cheat applycid CID_352_Athena_Commando_F_Shiny
+    Munitions Major:
+        cheat applycid CID_354_Athena_Commando_M_MunitionsExpert
+    Sunflower:
+        cheat applycid CID_356_Athena_Commando_F_Farmer
+    Kuno:
+        cheat applycid CID_362_Athena_Commando_F_BandageNinja
+    Lagoona:
+        cheat applycid CID_367_Athena_Commando_F_Tropical
+    Fastball:
+        cheat applycid CID_381_Athena_Commando_F_BaseballKitbash
+    Stealth Reflex:
+        cheat applycid CID_386_Athena_Commando_M_StreetOpsStealth
+    Pastel:
+        cheat applycid CID_392_Athena_Commando_F_BountyBunny
+    Dream:
+        cheat applycid CID_395_Athena_Commando_F_ShatterFly
+    Aura:
+        cheat applycid CID_397_Athena_Commando_F_TreasureHunterFashion
+    Cole:
+        cheat applycid CID_401_Athena_Commando_M_Miner
+    Bracer:
+        cheat applycid CID_414_Athena_Commando_F_MilitaryFashion
+    Takara:
+        cheat applycid CID_418_Athena_Commando_F_Geisha
+    Wonder:
+        cheat applycid CID_434_Athena_Commando_F_StealthHonor
+    Tsuki:
+        cheat applycid CID_472_Athena_Commando_F_CyberKarate
+    World Warrior:
+        cheat applycid CID_478_Athena_Commando_F_WorldCup
+    Glow:
+        cheat applycid CID_479_Athena_Commando_F_Davinci
+    Crystal:
+        cheat applycid CID_493_Athena_Commando_F_JurassicArchaeology
+    Frontier:
+        cheat applycid CID_498_Athena_Commando_M_WildWest
+    Fennix:
+        cheat applycid CID_504_Athena_Commando_M_Lopex
+    Sureshot:
+        cheat applycid CID_522_Athena_Commando_M_Bullseye
+    Sizzle Sgt:
+        cheat applycid CID_536_Athena_Commando_F_DurrburgerWorker
+    Remedy VS Toxin:
+        cheat applycid CID_567_Athena_Commando_F_RebirthMedic
+    Brilliant Bomber:
+        cheat applycid CID_619_Athena_Commando_F_TechLlama
+    Hush:
+        cheat applycid CID_616_Athena_Commando_F_CavalryBandit
+    Holly Jammer:
+        cheat applycid CID_651_Athena_Commando_F_HolidayPJ_C
+    Frozen Nog Ops:
+        cheat applycid CID_653_Athena_Commando_F_UglySweaterFrozen
+    Indigo Kuno:
+        cheat applycid CID_660_Athena_Commando_F_BandageNinjaBlue
+    Tigeress:
+        cheat applycid CID_683_Athena_Commando_F_TigerFashion
+    Jade Racer:
+        cheat applycid CID_684_Athena_Commando_F_DragonRacer
+    Travis Scott:
+        cheat applycid CID_703_Athena_Commando_M_Cyclone
+    Rue:
+        cheat applycid CID_753_Athena_Commando_F_Hostile
+    Wildcat (alt):
+        cheat applycid CID_757_Athena_Commando_F_WildCat
+    Jules:
+        cheat applycid CID_770_Athena_Commando_F_MechanicalEngineer
+    Blaze:
+        cheat applycid CID_784_Athena_Commando_F_RenegadeRaiderFire
+    Surf Strider:
+        cheat applycid CID_783_Athena_Commando_M_AquaJacket
+    Pitstop:
+        cheat applycid CID_828_Athena_Commando_F_Valet
+    Samurai Scrapper:
+        cheat applycid CID_838_Athena_Commando_M_JunkSamurai
+    Iron Man:
+        cheat applycid CID_843_Athena_Commando_M_HightowerTomato_Casual
+    Jonesy The First:
+        cheat applycid CID_883_Athena_Commando_M_ChOneJonesy
+    Vintage Ramirez:
+        cheat applycid CID_884_Athena_Commando_F_ChOneRamirez
+    Original Renegade:
+        cheat applycid CID_886_Athena_Commando_M_ChOneRenegade
+    Rookie Spitfire:
+        cheat applycid CID_887_Athena_Commando_M_ChOneSpitfire
+    Wildstreak One:
+        cheat applycid CID_889_Athena_Commando_F_ChOneWildcat
+    Headhunter Prime:
+        cheat applycid CID_890_Athena_Commando_F_ChOneHeadhunter
+    Curse Buster:
+        cheat applycid CID_913_Athena_Commando_F_York_D
+    Cloud Striker:
+        cheat applycid CID_926_Athena_Commando_F_StreetFashionDiamond
+    Gingerbread Raider:
+        cheat applycid CID_970_Athena_Commando_F_RenegadeRaiderHoliday
+)
